@@ -1,0 +1,62 @@
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* إنشاء 3 أعمدة */
+    gap: 20px; /* المسافة بين البطاقات */
+    padding: 20px; /* المسافة الداخلية حول الحاوية */
+    grid-auto-rows: minmax(200px, auto); /* تعيين الحد الأدنى للارتفاع بحيث يتغير حسب المحتوى */
+  }
+  
+  @media (max-width: 1200px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr); /* عمودين عند الشاشات الصغيرة */
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  /* تنسيقات أخرى */
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .total {
+    font-weight: bold;
+    margin-top: 20px;
+    color: rgb(255, 84, 84);
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing: 2px;
+    text-align: center;
+    display: flex;
+    margin-left: 1rem;
+  }
+  
+  .empty {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 25rem;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .empty {
+      margin-left: 0; /* محاذاة النص في الشاشات الصغيرة */
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
+  

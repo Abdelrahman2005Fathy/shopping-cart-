@@ -1,0 +1,19 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap:15rem;
+    margin-bottom: 10px;
+}
+
+.nav .amount{
+    color: #fff;
+    background-color: rgb(255, 0, 0);
+    padding:3px 7px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 1rem;
+    right:0.1rem;
+    
+}
