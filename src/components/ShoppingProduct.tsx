@@ -1,14 +1,12 @@
 import '../styles/ShoppingProduct.css';
 
-import React from 'react';
-
 import { useSelector } from 'react-redux';
 
 import { RootState } from '../types/types';
 import Product from './Product';
 
 const ShoppingProduct = () => {
-  const { products, quantity, total } = useSelector(
+  const { products, total } = useSelector(
     (store: RootState) => store.shopping
   );
   console.log(products);
